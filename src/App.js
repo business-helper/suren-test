@@ -2,10 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 // import './App.css';
 import TestPage from 'containers/TestPage';
+import { ApolloProvider } from '@apollo/react-hooks';
+import client from 'utils/GenerateClient.js';
 
 function App() {
   return (
-    <TestPage />
+    <ApolloProvider client={client}>
+      <TestPage />
+    </ApolloProvider>
   );
 }
 
