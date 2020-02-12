@@ -1,0 +1,71 @@
+.container {
+    position: absolute;
+    left: 46px;
+    bottom: 32px;
+    display: flex;
+}
+
+/* COUNTER SECTION */
+
+.counter {
+    width: 265px;
+    height: 57px;
+    border-radius: 8px 0 0 8px;
+    background-color: #0A1A33;
+}
+
+.label {
+    font-family: "Roboto, Regular";
+    font-size: 14px;
+    text-align: left;
+    letter-spacing: 0em;
+    line-height: 16px;
+    margin: 7px 0px 0px 10px;
+    color: #80A2CC;
+    opacity: 100%;
+}
+
+.amount {
+    margin: 3px 0 0 36px;
+    font-family: "Roboto, Black";
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 100%;
+}
+
+/* DECREASER SECTION */
+
+.half {
+    width: 58px;
+    height: 57px;
+    background-color: #275E9A;
+}
+
+.mutiplier {
+    margin: 20px 0 0 20px;
+    font-family: "Roboto, Regular";
+    font-size: 14px;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height:16px;
+    color: #FFFFFF;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+/* INCREASER SECTION */
+
+.double {
+    width: 58px;
+    height: 57px;
+    background-color: #275E9A;
+    border-radius:0 8px 8px 0;
+    border-left: 1px solid #525252;
+}
+
+.double .mutiplier {
+    margin-left: 21px;
+}
