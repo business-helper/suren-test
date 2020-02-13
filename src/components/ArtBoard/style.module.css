@@ -5,6 +5,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 10% 3%;
+    padding: 300px 3%;
     box-sizing: border-box;
 }

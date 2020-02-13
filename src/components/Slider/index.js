@@ -6,7 +6,7 @@ import Amount from './Amount';
 export default function Slider(props) {
     return (
         <div className={styles.container}>
-            <SliderMain />
+            <SliderMain/>
             <Amount />
         </div>
     );
