@@ -3,15 +3,14 @@
     width: 40%;
     background-color: #525252;
     border-radius: 15px 15px 15px 15px;
-    transform: rotate(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2%;
 }
 
 .wrapper {
     position: relative;
-    /* top: 163px;
-    left: 54px;
-    width: 602px;
-    height: 472px; */
     width: 100%;
     border-radius: 10px;
     background-color: #133252;
@@ -48,7 +47,8 @@
     font-size: 13px;
     letter-spacing: 0;
     line-height: 15px;
-    padding-bottom: 30px;
+    padding: 10px 0 30px 0;
+    min-height: 410px;
 }
 
 .tblTr {
@@ -65,6 +65,17 @@
 
 .colWhite {
     color: #FFFFFF;
+}
+
+.bitcoin {
+    width: 12px;
+    height: 12px;
+    font-size: 9px;
+    padding: 0 4px;
+    border-radius: 50%;
+    background-color: #FEC41C;
+    color: #000;
+    margin-right: 5px;
 }
 
 .profitPlus {
@@ -96,9 +107,17 @@
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .container {
         width: 94%;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
+        padding: 5% 3%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .tblHeader, .tblTr {
+        grid-template-columns: 1fr 1fr;
     }
 }

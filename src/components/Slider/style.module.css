@@ -3,19 +3,16 @@
     width: 27%;
     background-color: #525252;
     border-radius: 15px 15px 15px 15px;
-    transform: rotate(0);
 }
 
-
-
 /* RESPONSIVE */
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .container {
-        width: 45%;
+        width: 48.5%;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 769px) {
     .container {
         width: 94%;
         margin: 50px 0;

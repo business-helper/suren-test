@@ -29,7 +29,6 @@ export default class TestPage extends Component {
         let windowWidth = typeof window !== 'undefined' ? window.innerWidth : 0;
         let windowHeight = typeof window !== 'undefined' ? window.innerHeight : 0;
         this.setState({ windowWidth, windowHeight });
-        console.log(windowWidth, constants.BREAK_XL, constants.BREAK_MD, (this.state.windowWidth < constants.BREAK_LG) && (this.state.windowWidth > constants.BREAK_MD));
     }
 
     render() {

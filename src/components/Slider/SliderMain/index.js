@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import IndicatorSVG from 'assets/images/arrow.svg';
-import {  container, colorBarContainer, colorTop, colorBottom, indicatorComponent, amount, minLabel, maxLabel } from './style.module.css';
+import { container, colorBarContainer, colorTop, colorBottom, indicatorComponent, amount, minLabel, maxLabel } from './style.module.css';
 
 const throttle = (f) => {
     let token = null, lastArgs = null;
@@ -87,41 +87,46 @@ export default class Indicator extends React.PureComponent {
         y: 0,
         percent: '0.00',
         temp: "0.00",
-        focusFlag: false, 
+        focusFlag: false,
     };
 
     _move = (x, y) => {
-        var percent = ((560 - y) / 594) * 100;
-         percent = parseFloat(percent).toFixed(2);
-        this.setState({ percent, temp:percent });
+        // var percent = ((560 - y) / 594) * 100;
+        var percent = 100 - (y + 34.5) * 100 / 594;
+        percent = parseFloat(percent).toFixed(2);
+        percent = Math.min(100, percent);
+        percent = Math.max(0, percent);
+        this.setState({ percent, temp: percent });
     }
-
     handleKeyPress = (event) => {
         if (event.key === 'Enter') {
-            this.setState({ percent: this.state.temp, focusFlag:false })
+            this.setState({ percent: this.state.temp, focusFlag: false })
         }
     }
     handleClick = () => {
         this.nameInput.focus();
-        this.setState({focusFlag:true}) 
+        this.setState({ focusFlag: true })
     }
     render() {
-        let {focusFlag }= this.state
+        let { focusFlag } = this.state
         let percent = parseFloat(this.state.percent).toFixed(2);
-        let y = 560 - percent * 594 / 100;
+        percent = Math.min(100, percent);
+        percent = Math.max(0, percent);
+        // let y = 560 - percent * 594 / 100;
+        let y = (100 - percent) * 594 / 100 - 34.5;
         return (
             <div className={container}>
                 <div className={indicatorComponent}>
                     <Draggable x={113.51} y={y} className={indicatorComponent} onMove={this._move}>
                         <img src={IndicatorSVG} alt="Indicator SVG" />
-                            <input
-                               ref={(input) => { this.nameInput = input; }} 
-                                className={amount}
-                                value={!focusFlag ? percent:this.state.temp}
-                                type="text"
-                                onClick={this.handleClick}
-                                onChange={(e) => this.setState({ temp: e.target.value })}
-                                onKeyPress={this.handleKeyPress} />
+                        <input
+                            ref={(input) => { this.nameInput = input; }}
+                            className={amount}
+                            value={!focusFlag ? percent : this.state.temp}
+                            type="text"
+                            onClick={this.handleClick}
+                            onChange={(e) => this.setState({ temp: e.target.value })}
+                            onKeyPress={this.handleKeyPress} />
                     </Draggable>
                 </div>
                 <div className={colorBarContainer}>

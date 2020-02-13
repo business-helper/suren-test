@@ -10,7 +10,7 @@
     display: inline-block;
     /* width: calc(100% - 116px); */
     max-width: 265px;
-    padding: 0 20px;
+    padding-right: 20px;
     height: 57px;
     border-radius: 8px 0 0 8px;
     background-color: #0A1A33;
@@ -29,7 +29,7 @@
 }
 
 .amount {
-    margin: 3px 0 0 36px;
+    margin: 3px 0 0 10px;
     font-family: "Roboto, Black";
     font-size: 20px;
     text-align: left;
@@ -38,6 +38,19 @@
     color: #FFFFFF;
     opacity: 100%;
 }
+
+.amount span {
+    /* display: inline-block; */
+    width: 15px;
+    height: 15px;
+    font-size: 13px;
+    border-radius: 50%;
+    padding: 0 3px;
+    margin-right: 10px;
+    background-color: #FEC41C;
+    color: #000000;
+}
+
 
 /* DECREASER SECTION */
 

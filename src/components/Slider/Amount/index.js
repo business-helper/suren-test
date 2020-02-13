@@ -6,7 +6,7 @@ export default function Amount(props) {
         <div className={styles.container}>
             <div className={styles.counter}>
                 <span className={styles.label}>BET AMOUNT</span>
-                <p className={styles.amount}>0.04885313</p>
+                <p className={styles.amount}><span>&#8383;</span>0.04885313</p>
             </div>
 
             <div className={styles.half}>

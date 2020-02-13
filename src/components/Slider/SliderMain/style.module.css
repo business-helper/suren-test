@@ -1,9 +1,7 @@
 .container {
-    /* position: absolute;
-    left: 107px;
-    top: 68px; */
     width: 259.51px;
     height: 590px;
+    margin: 30px auto 70px auto;
     transform: rotate(0);
 }
 
@@ -51,6 +49,7 @@
     position: absolute;
     left: 36.5px;
     top: 10.53px;
+    max-width: 100px;
     color: #FFFFFF;
     font-family: "Roboto, Light";
     font-size: 39px;
