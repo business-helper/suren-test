@@ -106,7 +106,6 @@ class BetList extends Component {
                                 {this.state.windowWidth > constants.BREAK_SM && <div className={styles.colWhite} key={`multiple-${i}`}>{bet.payout / 4}</div>}
                                 <div className={bet.profit > 0 ? styles.profitPlus : styles.profitMinus} key={`profit-${i}`}><label className={styles.bitcoin}>&#8383;</label>{bet.profit > 0 ? '+' : ''}{bet.profit / 1000}</div>
                             </div>
-
                         )
                         )
                     }

@@ -3,6 +3,7 @@
     width: 27%;
     background-color: #525252;
     border-radius: 15px 15px 15px 15px;
+    margin-bottom: 50px;
 }
 
 /* RESPONSIVE */
@@ -12,9 +13,9 @@
     }
 }
 
-@media (max-width: 769px) {
+/* @media (max-width: 769px) {
     .container {
         width: 94%;
         margin: 50px 0;
     }
-}
+} */
