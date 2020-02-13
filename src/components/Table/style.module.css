@@ -1,20 +1,18 @@
 .container {
-    position: absolute;
-    top: 142px;
-    left: 620px;
-    width: 709px;
-    height: 823px;
+    position: relative;
+    width: 40%;
     background-color: #525252;
     border-radius: 15px 15px 15px 15px;
     transform: rotate(0);
 }
 
 .wrapper {
-    position: absolute;
-    top: 163px;
+    position: relative;
+    /* top: 163px;
     left: 54px;
     width: 602px;
-    height: 472px;
+    height: 472px; */
+    width: 100%;
     border-radius: 10px;
     background-color: #133252;
     border-collapse:collapse;
@@ -50,6 +48,7 @@
     font-size: 13px;
     letter-spacing: 0;
     line-height: 15px;
+    padding-bottom: 30px;
 }
 
 .tblTr {
@@ -93,5 +92,13 @@
       margin-top: 0px;
       opacity: 1;
       width: 100%;
+    }
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 94%;
+        margin-bottom: 25px;
     }
 }

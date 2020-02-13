@@ -1,6 +1,10 @@
 .board {
     background-color: #292929;
-    width: 1920px;
-    height: 1080px;
-    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10% 3%;
+    box-sizing: border-box;
 }

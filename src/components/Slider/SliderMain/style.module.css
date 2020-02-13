@@ -1,7 +1,7 @@
 .container {
-    position: absolute;
+    /* position: absolute;
     left: 107px;
-    top: 68px;
+    top: 68px; */
     width: 259.51px;
     height: 590px;
     transform: rotate(0);
@@ -20,7 +20,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 289px;
+    height: 100%;
     background-color: #6FF48D;
 }
 
@@ -29,11 +29,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 383px;
+    height: 0px;
     background-color: #FA6868;
     z-index: 1;
 }
-
+.indicatorComponent{
+    position: absolute;
+    z-index: 3;
+}
 .indicator {
     position: absolute;
     right: 0;
@@ -54,6 +57,9 @@
     text-align: left;
     letter-spacing: 0px;
     line-height: 46px;
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 .limitLabel {

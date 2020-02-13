@@ -1,7 +1,7 @@
 .wrapper {
     background-color: #5DA5ED;
     height: 50px;
-    width:1920px;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,7 +10,7 @@
 
 .circle {
     position: absolute;
-    left: 1870px;
+    right: 10px;
     top: 5px;
     width: 40px;
     height: 40px;

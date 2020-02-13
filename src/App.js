@@ -1,6 +1,5 @@
-import React from 'react';
-import logo from './logo.svg';
-// import './App.css';
+import React, { Component } from 'react';
+import './App.css';
 import TestPage from 'containers/TestPage';
 import { ApolloProvider } from '@apollo/react-hooks';
 import client from 'utils/GenerateClient.js';
