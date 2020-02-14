@@ -167,6 +167,7 @@ export default class Indicator extends React.PureComponent {
                         <input
                             ref={(input) => { this.nameInput = input; }}
                             className={amount}
+                            style={{cursor: `${focusFlag ? 'text' : 'grabbing'}`}}
                             value={!focusFlag ? percent : this.state.temp}
                             type="text"
                             onClick={this.handleClick}

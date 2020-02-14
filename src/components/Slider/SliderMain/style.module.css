@@ -34,7 +34,13 @@
 .indicatorComponent{
     position: absolute;
     z-index: 3;
+    cursor: grab;
 }
+
+.indicatorComponent:focus {
+    cursor: grabbing;
+}
+
 .indicator {
     position: absolute;
     right: 0;
